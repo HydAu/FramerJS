@@ -618,7 +618,7 @@ class exports.Layer extends BaseClass
 			if currentValue == value
 				return @emit "load"
 
-			# Unset the background color only if it’s the default color 
+			# Unset the background color only if it’s the default color
 			defaults = Defaults.getDefaults "Layer", {}
 			if @backgroundColor?.isEqual(defaults.backgroundColor)
 				@backgroundColor = null
